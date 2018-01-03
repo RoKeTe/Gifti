@@ -114,3 +114,10 @@ display: inline;
 float: right;
 margin: 0 auto;
 }*/
+.Copyright{
+color: #32CD32;
+height: 30px;
+width: 30px;
+display: inline;
+text-align: right;
+}
