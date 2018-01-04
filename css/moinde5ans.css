@@ -1,11 +1,12 @@
 @font-face {
-  font-family: 'molot';
-  src: url('assets/font/Molot.otf') format('truetype');
+  font-family: 'bunny';
+  src: url('../assets/fonts/bunny$mambo.ttf');
 }
+
 p{
   text-align: justify;
-  font-family: "molot";
-  font-size: 150%;
+  font-family: 'bunny';
+  font-size: 120%;
   text-align-last: left;
   color: rgb(218, 161, 13);
 }
