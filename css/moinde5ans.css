@@ -1,11 +1,21 @@
-
+@font-face {
+  font-family: 'molot';
+  src: url('assets/font/Molot.otf') format('truetype');
+}
 p{
   text-align: justify;
-  font: sans-serif;
-  font-size: 150%
+  font-family: "molot";
+  font-size: 150%;
+  text-align-last: left;
+  color: rgb(218, 161, 13);
 }
 
-
+.top{
+  border: 1px solid black;
+  height: 20%;
+  width: 100%;
+  overflow: hidden;
+}
 
 /*Permet de crée la bordure et donne la disposiont de mes boite figure*/
 figure{
@@ -13,14 +23,15 @@ figure{
   margin: auto center; /*permet de centrer automatiquement la figure sur la page*/
   border: 2px solid black; /*permet d'ajouter une bordure*/
   background-color: white; /*permet de modifier la couleur a l'intérieur de la bordure de l'element figure*/
-  height: 240px; /*permet de donner une hauteur a mes blocks figures*/
-  width: 235px; /*permet de donner une largeur a mes blocks figures*/
+  height: 20%; /*permet de donner une hauteur a mes blocks figures*/
+  width: 20%; /*permet de donner une largeur a mes blocks figures*/
 }
 
 figure img{
-  height: 190px; /*permet de donner une hauteur a mes images*/
-  width: 200px; /*permet de donner une largeur a mes images */
-  margin: 10px 0px 0px 15px; /*permet de crée l'espacement entre mes images et mes blocks figures*/
+  display: flex;
+  height: 50%; /*permet de donner une hauteur a mes images*/
+  width: 40%; /*permet de donner une largeur a mes images */
+  margin: 0 auto;/*permet de crée l'espacement entre mes images et mes blocks figures*/
 }
 
 figure figcaption{
@@ -30,20 +41,18 @@ figure figcaption{
   margin: 0 auto;
 }
 
-figure h3{
+figure h5{
   position: relative;
-  top: 5px;
-  left: 20px;
-  margin: 0;
+  left: 18px;
+  margin: 0 auto;
 }
 
 figure button{
   border: 2px solid black;
   background-color: darkgray;
   position: relative;
-  top: 5px;
   right: 20px;
-  margin: 0;
+  margin: 0 auto;
 }
 
 figure span{
