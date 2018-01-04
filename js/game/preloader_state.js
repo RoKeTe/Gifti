@@ -25,10 +25,11 @@ Gifti.Preload.prototype={
   //ici nous indiquons tous les fichiers que nous souhaitons charger pour notre jeu
   //et leur assignons à chacun un nom unique par lequel nous allons les référencer pour les utiliser
   this.load.image("bg", "assets/game_imgs/bg.png");
+  this.load.image("gui", "assets/game_imgs/gui.png");
   this.load.image("paddleBlue", "assets/game_imgs/paddleBlue.png");
   this.load.image("paddleRed", "assets/game_imgs/paddleRed.png");
-  this.load.image("ballBlue", "assets/game_imgs/ballBlue.png");
-  this.load.image("ballRed", "assets/game_imgs/ballRed.png");
+  this.load.spritesheet("balls", "assets/game_imgs/balls.png", 22, 22);
+  this.load.image("ballGrey", "assets/game_imgs/ballGrey.png");
   this.load.image("elementGreyRectangle", "assets/game_imgs/element_grey_rectangle.png");
   this.load.image("elementRedRectangle", "assets/game_imgs/element_red_rectangle.png");
   this.load.image("elementPurpleRectangle", "assets/game_imgs/element_purple_rectangle.png");
@@ -36,6 +37,7 @@ Gifti.Preload.prototype={
   this.load.image("elementGreenRectangle", "assets/game_imgs/element_green_rectangle.png");
   this.load.image("elementYellowRectangle", "assets/game_imgs/element_yellow_rectangle.png");
   this.load.image("elementYellowSquare", "assets/game_imgs/element_yellow_square.png");
+  this.load.image("particle", "assets/game_imgs/particle.png");
   //on lance le chargement
   this.load.start();
  },
