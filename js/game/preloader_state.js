@@ -24,6 +24,16 @@ Gifti.Preload.prototype={
  startLoad:function(){
   //ici nous indiquons tous les fichiers que nous souhaitons charger pour notre jeu
   //et leur assignons à chacun un nom unique par lequel nous allons les référencer pour les utiliser
+
+  //Image des boutons pour les menus
+  this.load.spritesheet("button", "assets/game_imgs/buttons.png", 190, 49);
+  //Logos et images des menu
+  this.load.image("logo", "assets/logo/Gifti5.png");
+  this.load.image("bgMenu", "assets/game_imgs/bg_menu.png");
+  this.load.image("bgInstructions", "assets/game_imgs/bg_instructions.png");
+  this.load.image("bgVictory", "assets/game_imgs/bg_victory.png");
+  this.load.image("bgGameOver", "assets/game_imgs/bg_game_over.png");
+  //Images du jeu
   this.load.image("bg", "assets/game_imgs/bg.png");
   this.load.image("gui", "assets/game_imgs/gui.png");
   this.load.image("paddleBlue", "assets/game_imgs/paddleBlue.png");
@@ -36,7 +46,6 @@ Gifti.Preload.prototype={
   this.load.image("elementBlueRectangle", "assets/game_imgs/element_blue_rectangle.png");
   this.load.image("elementGreenRectangle", "assets/game_imgs/element_green_rectangle.png");
   this.load.image("elementYellowRectangle", "assets/game_imgs/element_yellow_rectangle.png");
-  this.load.image("elementYellowSquare", "assets/game_imgs/element_yellow_square.png");
   this.load.image("particle", "assets/game_imgs/particle.png");
   //on lance le chargement
   this.load.start();
@@ -53,7 +62,7 @@ Gifti.Preload.prototype={
   },
 
   loadComplete:function(){
-     // tous les fichiers sont chargés, on peut donc lancer l'état suivant : le jeu!
-     this.state.start("Game");
+     // tous les fichiers sont chargés, on peut donc lancer l'état suivant : le menu
+     this.state.start("Instructions");
   }
 }

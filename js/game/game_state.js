@@ -74,6 +74,11 @@ Gifti.Game.prototype={
     },
 
     update:function(){
+      //On vérifie si on a réalisé la condition de victoire
+      if(score>=500){
+        this.state.start("Victory");
+      }
+
       //On reset la vélocité du paddlTexte pe du joueur 1 et du joueur 2
       paddle1.body.velocity.x=0;
       paddle2.body.velocity.x=0;
@@ -135,13 +140,12 @@ Gifti.Game.prototype={
           nbrBalls--;
           if(nbrBalls<=0){
             //Renvoyer vers l'écran de game over
+            this.state.start("GameOver");
           }
-          else{
-            nbrBallsText.text="x"+nbrBalls;
-          }
+          nbrBallsText.text="x"+nbrBalls;
         }
 
-        if(ball.position.y==0){
+        if(ball.position.y<=64){
           ballVelocity.y=500;
         }
         if(ball.position.x<=0){
