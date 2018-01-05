@@ -5,20 +5,21 @@
 html, body{
   margin: 0;
   padding: 0;
-  height: 100%;
   width: 100%;
+  background-image: radial-gradient(circle at top left,red,yellow,white);
+  background-repeat: no-repeat;
 }
 .logo{
-  height: 70px;
-  text-align: center;
+  height: 150px;
+  display: flex;
+  /*justify-content: center;*/
+  margin: auto;
 }
 nav{
-  height: 150px;
-  width: 90%;
-  background-color: lightblue;
+  height: 70px;
+  width: 95%;
+  background-color: white;
   font-style: bolder;
-  /*border-style: solid;
-  border-color: blue;*/
   text-align: center;
   margin: 0 auto;
 }
@@ -34,31 +35,50 @@ ul li {
   text-align: center;
   font-size: 40px;
   font-weight: 400;
+  /*border: 2px solid black;*/
 }
 ul li a{
   color: #76159e;
   font-family: 'ubuntu',sans-serif;
   text-decoration: none;
   text-align: right;
-  font-size: 15px;
+  font-size: 18px;
 }
 h1{
   font-family: sans-serif;
+  color: red;
 }
-p{
+/*p{
   font-family: sans-serif;
-}
+  height: 100px;
+}*/
+
 /*barre_déroulante*/
 #barre_déroulante{
   width: 100%;
-  border: 2px, blue;
   text-align: center;
 }
 .barre_déroulante{
-  width: 80%;
-  border: 2px blue;
-  background-color: gold;
+  width: 90%;
+  height: 50%;
+  /*border: 2px blue;*/
+  /*background-color: white;*/
   margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  margin-top: 20px;
+  background-image: url(../assets/accueil_imgs/tapisjouets.png);
+}
+.promo img{
+  /*width: 15%;
+  height: 5%;*/
+  width: 22%;
+  height: 5%;
+  margin-left: 25px;
+  display: flex;
+  float: left;
+  border-radius: 0 20px 0 20px;
+  border: 2px solid orange;
 }
 
 /*topvente*/
@@ -69,7 +89,7 @@ p{
 }
 .topvente{
   width: 80%;
-  background-color: purple;
+  background-color: #FF6347;
   margin: 0 auto;
 }
 
@@ -85,6 +105,7 @@ p{
   margin: 0 auto;
 }
 
+
 /*bas de page*/
 footer{
   font-weight: normal;
@@ -98,26 +119,12 @@ footer{
   height: 50px;
   background-color: #32CD32;
 }
-p1 a{
-color: #800000;
-height: 60px;
-width: 60px;
-display: inline;
-float: right;
-margin: 0 auto;
-}
-/*i{
-color: #800000;
-height: 60px;
-width: 60px;
-display: inline;
-float: right;
-margin: 0 auto;
-}*/
-.Copyright{
+
+.Copyright ul li a{
 color: #32CD32;
 height: 30px;
 width: 30px;
-display: inline;
-text-align: right;
+display: inline-block;
+text-align: left;
+margin: 0 auto;
 }

@@ -3,16 +3,15 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="../css/accueil.css">
-      <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.css">
     <title></title>
   </head>
-  <body>
     <body>
       <header>
-       <nav>
          <img class="logo" src="../assets/logo/Gifti5.png">
+       <nav>
+
         <ul>
-          <li><a href="#moinsde5ans">Moins de 5 ans</a></li>
+          <li><a href="moinde5ans.html">Moins de 5 ans</a></li>
           <li><a href="#filles">Filles</a></li>
           <li><a href="#garçons">Garçons</a></li>
           <li><a href="#jeuxdesociété">Jeux de Société</a></li>
@@ -24,18 +23,26 @@
      </header>
 
 <!-- barre déroulante -->
-
     <section id="barre_déroulante">
        <div class="barre_déroulante">
-         <h1>Nos offres promotionnelles</h1>
-         <p></p>
+         <h1>Nos actualités promotionnelles</h1>
+           <div class="promo" align="left">
+              <!-- align="left"> -->
+            <!-- <MARQUEE onMouseOver=this.stop() onMouseOut=this.start() scrollAmount=4 scrolldelay="0" direction="left" behavior="scroll" border="0" loop="1" hspace="0"> -->
+              <a href="promo1"><img class="promo" src="../assets/accueil_imgs/bon_reduc.png"></a>
+              <a href="promo2"><img class="promo" src="../assets/accueil_imgs/ouverture_ex.png"></a>
+              <a href="promo3"><img class="promo" src="../assets/accueil_imgs/Venez jouer en famille.png"></a>
+              <a href="promo4"><img class="promo" src="../assets/accueil_imgs/Arrivage des jeux de plein air.png"></a>
+
+<!-- Fin de la Zone de Défilement -->
+            <!-- </MARQUEE> -->
+          </div>
          <div class="Bouton1"><a href="#Produits">Découvrez nos produits</a>
          </div>
        </div>
     </section>
 
 <!-- top vente et promo -->
-
     <section id="topvente">
        <div class="topvente">
          <h1>Le top des tops!</h1>
@@ -45,7 +52,6 @@
     </section>
 
 <!-- bannière jeux promotionnels -->
-
     <section id="réductions">
       <div class="réductions">
        <h1>Viens jouer!</h1>
@@ -56,28 +62,25 @@
 <!-- footer-->
     <footer>
       <div class="Copyright">Copyright &copy; 2018
-        <!-- <p class="p1"> -->
-          <ul>
-      <li><a href="https://fr-fr.facebook.com/" target="_blank"></a>
-        <i class="fa fa-facebook-square" aria-hidden="true"></i>
-      </li>
-      <li><a href="https://twitter.com/?lang=fr" target="_blank"></a>
-        <i class="fa fa-twitter-square" aria-hidden="true"></i>
-      </li>
-      <li><a href="https://www.instagram.com/?hl=fr" target="_blank"></a>
-        <i class="fa fa-instagram" aria-hidden="true"></i>
-      </li>
-      <li><a href="https://maps.google.com/"><img src="IMG/logo-googlemap01.png"></a>
-      </li>
-    </ul>
-          <!-- <a href="https://fr-fr.facebook.com/" target="_blank" class="fa fa-facebook-square" aria-hidden="true"></a> -->
-          <!-- <i class="fa fa-facebook-square" aria-hidden="true"></i> -->
-          <!-- <a href="https://twitter.com/?lang=fr" target="_blank" class="fa fa-twitter-square" aria-hidden="true"></a> -->
-          <!-- <i class="fa fa-twitter-square" aria-hidden="true"></i></a> -->
-
-        <!-- </p> -->
+        <ul class="réseaux">
+          <li><a href="https://fr-fr.facebook.com/" target="_blank"></a>
+            <i class="fab fa-facebook-square"></i>
+          </li>
+          <li><a href="https://twitter.com/?lang=fr" target="_blank"></a>
+            <i class="fab fa-twitter-square"></i>
+          </li>
+          <li><a href="https://www.instagram.com/?hl=fr" target="_blank"></a>
+            <i class="fab fa-instagram"></i>
+          </li>
+          <li><a href="https://fr-fr.messenger.com/" target="_blank"></a>
+            <i class="fab fa-facebook-messenger"></i>
+          </li>
+          <li><a href="https://maps.google.com/"></a>
+          </li>
+        </ul>
       </div>
-    </footer>
 
+    </footer>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
   </body>
 </html>
