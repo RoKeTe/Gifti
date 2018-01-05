@@ -1,71 +1,58 @@
-@font-face {
-  font-family: 'bunny';
-  src: url('../assets/fonts/bunny$mambo.ttf');
-}
 #gris{
   background-color: lightgray;
 }
 .descriptif{
   text-align: justify;
-  font-family: 'bunny', Georgia, Arial, sans-serif;
+  font-family: Georgia, Arial, sans-serif;
   font-size: 120%;
   text-align-last: left;
   color: rgb(218, 161, 13);
 }
 
 .top{
-  border: 1px solid black;
-  height: 700px;
-  width: 100%;
-  overflow: hidden;
-}
-
-/*Permet de crée la bordure et donne la disposiont de mes boite figure*/
-figure{
-  position: relative;
-  display: inline-block; /*permet d'aligner les blocks figures*/
-  border: 2px solid black; /*permet d'ajouter une bordure*/
-  background-color: white; /*permet de modifier la couleur a l'intérieur de la bordure de l'element figure*/
-  height: 250px; /*permet de donner une hauteur a mes blocks figures*/
-  width: 300Px; /*permet de donner une largeur a mes blocks figures*/
-  overflow: hidden;
-  transition-property: height, width;
-  transition-duration: 0.4s;
-}
-
-figure img{
   display: flex;
-  height: 250px; /*permet de donner une hauteur a mes images*/
-  width: 150px; /*permet de donner une largeur a mes images */
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 100%;
+  width: 100%;
 }
 
-figure figcaption{
-
-}
-
-figure h5{
-  position: relative;
-  top: -150px;
+img{
+  height: 200px;
+  width: 200px;
   left: 20px;
 }
 
-figure button{
-  border: 2px solid black;
-  background-color: darkgray;
+.imgs{
+  border: 1px solid black;
+  height: 300px;
+  width: 200px;
+  margin: 10px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7), -3px -3px 5px rgba(255, 255, 255, 0.5);
+  background-color: rgb(255, 222, 0);
+
+}
+
+h5{
+  color: red;
+  font-family: Arial, sans-serif;
+  font-size: 1em;
+  text-align: center;
+}
+
+
+
+button{
   position: relative;
-}
-
-figure span{
-  color: darkred;
-}
-
-.jouets{
-  display: inline;
-  font-family: Georgia, Arial, sans-serif;
-  font-size: 16px;
-}
-figure:hover{
-  height: 700px;
-  width: 100%;
-  overflow: visible;
+  top: -20px;
+  left: 135px;
+  height: 30px;
+  width: 70px;
+  border: 1px solid rgb(78, 160, 220);
+  border-radius: 10px;
+  background-color: rgb(78, 160, 212);
+  color: rgb(255, 255, 255);
 }
