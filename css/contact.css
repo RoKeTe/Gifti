@@ -1,0 +1,114 @@
+@font-face {
+  font-family: 'bunny$mambo.ttf', sans-serif;
+}
+
+html, body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-image: radial-gradient(circle at top left,red,yellow,white);
+  background-repeat: no-repeat;
+}
+.logo{
+  height: 150px;
+  display: flex;
+  margin: auto;
+}
+nav{
+  height: 70px;
+  width: 95%;
+  background-color: white;
+  font-style: bolder;
+  text-align: center;
+  margin: 0 auto;
+}
+ul{
+  float: left;
+  margin: 0 auto;
+}
+ul li {
+  display: inline;
+  margin: 30px;
+  font-style: normal;
+  font-variant: normal;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 400;
+  /*border: 2px solid black;*/
+}
+ul li a{
+  color: #76159e;
+  font-family: 'bunny$mambo.ttf', sans-serif;
+  text-decoration: none;
+  text-align: right;
+  font-size: 18px;
+}
+h1{
+  font-family: 'bunny$mambo.ttf', sans-serif;
+  color: red;
+  text-align: center;
+}
+
+/*barre_déroulante*/
+#contact1{
+  width: 90%;
+  height:100%;
+  margin: 0 auto;
+  background-image: url(../assets/accueil_imgs/tapisjouets.png);
+}
+.adresse, .telephone{
+  width: 40%;
+  height: auto;
+  background-color: white;
+  border: 2px solid orange;
+  border-radius: 0 20px 0 20px;
+  /*margin: 0 auto;*/
+  padding-top: 10px;
+  padding-bottom: 20px;
+  margin-top: 20px;
+  display: flex;
+  float: left;
+}
+#réseaux{
+  width: 90%;
+  background-color: lightblue;
+  /*border: 2px, blue;*/
+  margin: 0 auto;
+  /*text-align: center;*/
+}
+.mail, .facebook-twitter{
+  width: 40%;
+  height: 80%;
+  background-color: white;
+  border: 2px solid orange;
+  border-radius: 0 20px 0 20px;
+  /*margin: 0 auto;*/
+  padding-top: 10px;
+  padding-bottom: 20px;
+  margin-top: 20px;
+  display: flex;
+  float: left;
+}
+
+/*bas de page*/
+footer{
+  font-weight: normal;
+  font-family: sans-serif;
+  color: #800000;
+  /*margin-left: 20px;*/
+  /*padding-top: 10px;
+  margin-top: 100px;*/
+  margin: 0 auto;
+  width: 90%;
+  height: 50px;
+  background-color: #32CD32;
+}
+
+.Copyright ul li a{
+color: #32CD32;
+height: 30px;
+width: 30px;
+display: inline-block;
+text-align: left;
+margin: 0 auto;
+}
