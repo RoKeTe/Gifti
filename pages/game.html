@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1, IE=9">
+    <meta name="viewport" content="initial-scale=1 maximum-scale=1 user-scalable=0 minimal-ui" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-title" content="Phaser App">
+
+    <script src="../js/phaser.min.js"></script>
+    <script src="../js/game/boot_state.js"></script>
+    <script src="../js/game/preloader_state.js"></script>
+    <script src="../js/game/menu_state.js"></script>
+    <script src="../js/game/instructions_state.js"></script>
+    <script src="../js/game/game_state.js"></script>
+    <script src="../js/game/game_over_state.js"></script>
+    <script src="../js/game/victory_state.js"></script>
+
+    <title>Test jeu</title>
+  </head>
+  <body style="background-color: black">
+    <script type="text/javascript">
+      Gifti.game = new Phaser.Game(768, 600, Phaser.CANVAS, '');
+      Gifti.game.state.add('Boot', Gifti.Boot);
+      Gifti.game.state.add('Preload', Gifti.Preload);
+      Gifti.game.state.add('Menu', Gifti.Menu);
+      Gifti.game.state.add('Instructions', Gifti.Instructions);
+      Gifti.game.state.add('Game', Gifti.Game);
+      Gifti.game.state.add('GameOver', Gifti.GameOver);
+      Gifti.game.state.add('Victory', Gifti.Victory);
+
+      Gifti.game.state.start('Boot');
+    </script>
+  </body>
+</html>

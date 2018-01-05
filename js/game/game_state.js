@@ -110,6 +110,16 @@ Gifti.Game.prototype={
         ballVelocity.y=-500;
       }
 
+      //Pour revenir au menu
+      if(this.input.keyboard.isDown(Phaser.Keyboard.ESC)){
+        this.state.start("Menu");
+      }
+
+      //Pour gagner automatiquement
+      if(this.input.keyboard.isDown(Phaser.Keyboard.F1)){
+        this.state.start("Victory");
+      }
+
       //Gestion des inputs joueur 2
       if(this.input.keyboard.isDown(Phaser.Keyboard.LEFT)){
         paddle2.body.velocity.x=-400;

@@ -15,6 +15,9 @@ Gifti.Menu.prototype={
       logo=this.add.sprite(768/2, 600/2, "logo");
       //offset du logo
       logo.anchor.setTo(0.5, 0.5);
+      //Petit texte accroché au logo
+      logoText=this.add.text(120, 320, "Jeu promotionnel!!!", { fontSize: '82px', fill: '#c50' });
+      logoText.angle=-45;
 
       //Création des boutons
       button1=this.add.button(175, 450, "button", actionOnClickJouer, this, 1, 0, 2);

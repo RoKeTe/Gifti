@@ -26,27 +26,31 @@ Gifti.Preload.prototype={
   //et leur assignons à chacun un nom unique par lequel nous allons les référencer pour les utiliser
 
   //Image des boutons pour les menus
-  this.load.spritesheet("button", "assets/game_imgs/buttons.png", 190, 49);
+  this.load.spritesheet("button", "../assets/game_imgs/buttons.png", 190, 49);
   //Logos et images des menu
-  this.load.image("logo", "assets/logo/Gifti5.png");
-  this.load.image("bgMenu", "assets/game_imgs/bg_menu.png");
-  this.load.image("bgInstructions", "assets/game_imgs/bg_instructions.png");
-  this.load.image("bgVictory", "assets/game_imgs/bg_victory.png");
-  this.load.image("bgGameOver", "assets/game_imgs/bg_game_over.png");
+  this.load.image("logo", "../assets/logo/Gifti5.png");
+  this.load.image("bgMenu", "../assets/game_imgs/bg_menu.png");
+  this.load.image("bgInstructions", "../assets/game_imgs/bg_instructions.png");
+  this.load.image("bgVictory", "../assets/game_imgs/bg_victory.png");
+  this.load.image("bgGameOver", "../assets/game_imgs/bg_game_over.png");
+  this.load.image("key1", "../assets/game_imgs/key1.png");
+  this.load.image("key2", "../assets/game_imgs/key2.png");
+  this.load.image("key3", "../assets/game_imgs/key3.png");
+  this.load.image("key4", "../assets/game_imgs/key4.png");
   //Images du jeu
-  this.load.image("bg", "assets/game_imgs/bg.png");
-  this.load.image("gui", "assets/game_imgs/gui.png");
-  this.load.image("paddleBlue", "assets/game_imgs/paddleBlue.png");
-  this.load.image("paddleRed", "assets/game_imgs/paddleRed.png");
-  this.load.spritesheet("balls", "assets/game_imgs/balls.png", 22, 22);
-  this.load.image("ballGrey", "assets/game_imgs/ballGrey.png");
-  this.load.image("elementGreyRectangle", "assets/game_imgs/element_grey_rectangle.png");
-  this.load.image("elementRedRectangle", "assets/game_imgs/element_red_rectangle.png");
-  this.load.image("elementPurpleRectangle", "assets/game_imgs/element_purple_rectangle.png");
-  this.load.image("elementBlueRectangle", "assets/game_imgs/element_blue_rectangle.png");
-  this.load.image("elementGreenRectangle", "assets/game_imgs/element_green_rectangle.png");
-  this.load.image("elementYellowRectangle", "assets/game_imgs/element_yellow_rectangle.png");
-  this.load.image("particle", "assets/game_imgs/particle.png");
+  this.load.image("bg", "../assets/game_imgs/bg.png");
+  this.load.image("gui", "../assets/game_imgs/gui.png");
+  this.load.image("paddleBlue", "../assets/game_imgs/paddleBlue.png");
+  this.load.image("paddleRed", "../assets/game_imgs/paddleRed.png");
+  this.load.spritesheet("balls", "../assets/game_imgs/balls.png", 22, 22);
+  this.load.image("ballGrey", "../assets/game_imgs/ballGrey.png");
+  this.load.image("elementGreyRectangle", "../assets/game_imgs/element_grey_rectangle.png");
+  this.load.image("elementRedRectangle", "../assets/game_imgs/element_red_rectangle.png");
+  this.load.image("elementPurpleRectangle", "../assets/game_imgs/element_purple_rectangle.png");
+  this.load.image("elementBlueRectangle", "../assets/game_imgs/element_blue_rectangle.png");
+  this.load.image("elementGreenRectangle", "../assets/game_imgs/element_green_rectangle.png");
+  this.load.image("elementYellowRectangle", "../assets/game_imgs/element_yellow_rectangle.png");
+  this.load.image("particle", "../assets/game_imgs/particle.png");
   //on lance le chargement
   this.load.start();
  },
@@ -63,6 +67,6 @@ Gifti.Preload.prototype={
 
   loadComplete:function(){
      // tous les fichiers sont chargés, on peut donc lancer l'état suivant : le menu
-     this.state.start("Instructions");
+     this.state.start("Menu");
   }
 }
