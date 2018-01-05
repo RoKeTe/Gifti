@@ -97,12 +97,20 @@ h1{
 #réductions{
   width: 100%;
   border: 2px, blue;
-  text-align: center;
 }
 .réductions{
   width: 80%;
   background-color: lightgreen;
   margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#game_img{
+  width:384px;
+  height:300px;
+  background-image: url("../assets/game_imgs/image_jeu_promo.png");
+  background-size: contain;
 }
 
 
