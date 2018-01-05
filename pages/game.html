@@ -17,11 +17,62 @@
     <script src="../js/game/game_over_state.js"></script>
     <script src="../js/game/victory_state.js"></script>
 
+    <link rel="stylesheet" href="../css/accueil.css">
+
     <title>Test jeu</title>
   </head>
-  <body style="background-color: black">
+  <body>
+    <header>
+      <!-- Pour le go to top -->
+      <a name="haut" id="haut"></a>
+      <div><a id="cRetour" class="cInvisible" href="#haut"></a></div>
+     <!-- Logo -->
+     <img class="logo" src="../assets/logo/Gifti5.png">
+     <!-- Nav -->
+     <nav>
+      <ul>
+        <li><a href="moinde5ans.html">Moins de 5 ans</a></li>
+        <li><a href="#filles">Filles</a></li>
+        <li><a href="#garçons">Garçons</a></li>
+        <li><a href="#jeuxdesociété">Jeux de Société</a></li>
+        <li><a href="#jeuxvidéos">Jeux vidéos</a></li>
+        <li><a href="#contact">Contacts</a></li>
+        <li><a href="#jeuxpromotionnels">Jeux promotionnels</a></li>
+      </ul>
+     </nav>
+   </header>
+
+   <!-- Div qui contient le jeu -->
+    <div id="game" style="margin:50px"></div>
+
+    <!-- footer-->
+    <footer>
+      <div class="Copyright">Copyright &copy; 2018
+        <ul class="réseaux">
+          <li><a href="https://fr-fr.facebook.com/" target="_blank"></a>
+            <i class="fab fa-facebook-square"></i>
+          </li>
+          <li><a href="https://twitter.com/?lang=fr" target="_blank"></a>
+            <i class="fab fa-twitter-square"></i>
+          </li>
+          <li><a href="https://www.instagram.com/?hl=fr" target="_blank"></a>
+            <i class="fab fa-instagram"></i>
+          </li>
+          <li><a href="https://fr-fr.messenger.com/" target="_blank"></a>
+            <i class="fab fa-facebook-messenger"></i>
+          </li>
+          <li><a href="https://maps.google.com/"></a>
+          </li>
+        </ul>
+      </div>
+
+    </footer>
+    <!-- FontAwesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
+
+    <!-- Script du jeu -->
     <script type="text/javascript">
-      Gifti.game = new Phaser.Game(768, 600, Phaser.CANVAS, '');
+      Gifti.game = new Phaser.Game(768, 600, Phaser.CANVAS, 'game');
       Gifti.game.state.add('Boot', Gifti.Boot);
       Gifti.game.state.add('Preload', Gifti.Preload);
       Gifti.game.state.add('Menu', Gifti.Menu);
@@ -32,5 +83,8 @@
 
       Gifti.game.state.start('Boot');
     </script>
+
+    <!-- Bouton go to top -->
+    <script type="text/javascript" src="../js/goToTop.js"></script>
   </body>
 </html>
