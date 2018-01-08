@@ -133,3 +133,57 @@ footer{
   font-size: 30px;
   right: 30px;
 }
+
+/*Présentation produits*/
+#presentation{
+  width: 80%;
+  height: 80%;
+  /*POSITION*/
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /*APPARENCE*/
+  background-color: white;
+  border: 1px solid black;
+}
+
+
+/*IMAGE DANS LA DIV DE PRESENTATION*/
+#imgPresentation{
+  height: 100%;
+  width: auto;
+  float: left;
+}
+/*TITRE DANS LA DIV DE PRESENTATION*/
+#titlePresentation{
+  color: red;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+/*DESCRIPTIF DANS LA DIV DE PRESENTATION*/
+#textPresentation{
+  padding: 1%;
+}
+/*BOUTON DANS LA DIIV DE PRESENTATION*/
+#buttonPresentation{
+  position: absolute;
+  top: 90%;
+  left: 83%;
+  height: 40px;
+  width: 160px;
+  border: 1px solid rgb(78, 160, 220);
+  border-radius: 10px;
+  background-color: rgb(78, 160, 212);
+  color: rgb(255, 255, 255);
+}
+/*BOUTON QUITTER DE LA DIV DE PRESENTATION*/
+#quitPresentation{
+  background: url("../assets/miscellaneous/close-window.png");
+  background-size: contain;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: -2.5%;
+  left: 98.25%;
+}
