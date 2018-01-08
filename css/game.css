@@ -79,66 +79,6 @@ footer{
   right: 30px;
 }
 
-/*barre_déroulante*/
-#barre_déroulante{
-  width: 100%;
-  text-align: center;
-}
-.barre_déroulante{
-  width: 90%;
-  height: 50%;
-  /*border: 2px blue;*/
-  /*background-color: white;*/
-  margin: 0 auto;
-  padding-top: 10px;
-  padding-bottom: 20px;
-  margin-top: 20px;
-  background-image: url(../assets/accueil_imgs/tapisjouets.png);
-}
-.promo img{
-  /*width: 15%;
-  height: 5%;*/
-  width: 22%;
-  height: 5%;
-  margin-left: 25px;
-  display: flex;
-  float: left;
-  border-radius: 0 20px 0 20px;
-  border: 2px solid orange;
-}
-
-/*topvente*/
-#topvente{
-  width: 100%;
-  border: 2px, blue;
-  text-align: center;
-}
-.topvente{
-  width: 80%;
-  background-color: #FF6347;
-  margin: 0 auto;
-}
-
-/*bons de réduction*/
-#réductions{
-  width: 100%;
-  border: 2px, blue;
-}
-.réductions{
-  width: 80%;
-  background-color: lightgreen;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-#game_img{
-  width:384px;
-  height:300px;
-  background-image: url("../assets/game_imgs/image_jeu_promo.png");
-  background-size: contain;
-}
-
 /*Bouton go to top*/
 a#cRetour{
   border-radius:3px;
