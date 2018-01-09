@@ -6,6 +6,7 @@ body{
 
 }
 /*HEADER*/
+/*div qui contient le logo*/
 .logo{
   width: 300px;
   height: 150px;
@@ -13,17 +14,20 @@ body{
   background-repeat: no-repeat;
   margin: auto;
 }
+/*application de changement au logo*/
 .logoImg{
   height: 150px;
   display: flex;
   margin: auto;
 }
+/*div qui contient notre logo et notre barre de nav*/
 header{
   background-image: radial-gradient(rgb(255, 180, 0), rgb(255, 120, 0));
   background-repeat: no-repeat;
   box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.6);
   padding-bottom: 0.01%;
 }
+/*barre de navigation entre les pages*/
 nav ul
 {
     list-style-type: none;
@@ -64,28 +68,32 @@ footer{
   background-image: radial-gradient(rgb(255, 180, 0), rgb(255, 120, 0));
   box-shadow: 0px -6px 4px rgba(0, 0, 0, 0.5);
 }
+/*texte qui apparaît dans le footer*/
 #copy{
   position: relative;
   font-size: 15px;
   left: 35px;
 }
+/*Icône de fontawsome*/
 #icone{
   position: relative;
   font-size: 30px;
   right: 30px;
 }
-presentation
 
-/*corp page moins de 5 ans*/
 
-.descriptif{
-  text-align: justify;
-  font-family: Georgia, Arial, sans-serif;
-  font-size: 120%;
-  text-align-last: left;
-  color: rgb(218, 161, 13);
+/*Corps page moins de 5 ans*/
+/*Texte qui décrit sur quelle page nous sommes*/
+.imaged{
+  position: relative;
+  height: 200px;
+  width: 100%;
+  top: -30px;
+  background-image: url("../assets/jouet_moin_de_5_ans/border.jpg");
+  background-size: cover;
+  margin: 0 auto;
 }
-
+/*Div qui contient toutes nos divs images*/
 .top{
   display: flex;
   flex-direction: row;
@@ -95,13 +103,13 @@ presentation
   width: 80%;
   margin: 0 auto 30px;
 }
-
+/*c'est ici que nous modifions la taille des images*/
 .imgs img{
   height: 200px;
   width: 200px;
   left: 20px;
 }
-
+/*div qui contient nos images nos titres et nos prix*/
 .imgs{
   border: 1px solid black;
   height: 300px;
@@ -113,14 +121,14 @@ presentation
   background-color: rgb(255, 222, 0);
 
 }
-
+/*c'est ici que nous modifions les titres qui apparaissent dans le conteneur imgs*/
 h5{
   color: red;
   font-family: Arial, sans-serif;
   font-size: 1em;
   text-align: center;
 }
-
+/*ici nous faisons les modifications apporter au bouton*/
 button{
   position: relative;
   top: -20px;
@@ -146,6 +154,7 @@ button{
   background-color: white;
   border: 1px solid black;
 }
+
 
 /*IMAGE DANS LA DIV DE PRESENTATION*/
 #imgPresentation{

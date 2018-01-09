@@ -1,0 +1,15 @@
+body{
+  margin: 0;
+  padding: 0;
+  height: auto;
+  width: 100%;
+}
+.mention {
+  background-color: Beige;
+}
+p{
+  font-family: "Times New Roman", Georgia, sans-serif;
+  font-size: 1.5em;
+  text-align: justify;
+  text-align-last: left;
+}

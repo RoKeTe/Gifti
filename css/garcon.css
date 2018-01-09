@@ -1,0 +1,229 @@
+/*BODY*/
+body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+
+}
+/*HEADER*/
+/*div qui contient le logo*/
+.logo{
+  width: 300px;
+  height: 150px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: auto;
+}
+/*application de changement au logo*/
+.logoImg{
+  height: 150px;
+  display: flex;
+  margin: auto;
+}
+/*div qui contient notre logo et notre barre de nav*/
+header{
+  background-image: radial-gradient(rgb(255, 180, 0), rgb(255, 120, 0));
+  background-repeat: no-repeat;
+  box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.6);
+  padding-bottom: 0.01%;
+}
+/*barre de navigation entre les pages*/
+nav ul
+{
+    list-style-type: none;
+    display: flex;
+}
+nav li
+{
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #fff;
+    margin: 0.55%;
+}
+nav a
+{
+  font-family: sans-serif;
+  color: #fff;
+  text-decoration: none;
+}
+nav a:hover
+{
+    color: #760001;
+    border-bottom: 3px solid #760001;
+}
+h5{
+  font-family: sans-serif;
+  color: red;
+}
+
+/*BAS DE PAGE*/
+footer{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  margin: 0;
+  background-image: radial-gradient(rgb(255, 180, 0), rgb(255, 120, 0));
+  box-shadow: 0px -6px 4px rgba(0, 0, 0, 0.5);
+}
+/*texte qui apparaît dans le footer*/
+#copy{
+  position: relative;
+  font-size: 15px;
+  left: 35px;
+}
+/*Icône de fontawsome*/
+#icone{
+  position: relative;
+  font-size: 30px;
+  right: 30px;
+}
+
+
+/*Corps page moins de 5 ans*/
+/*Texte qui décrit sur quelle page nous sommes*/
+.imaged{
+  position: relative;
+  height: 200px;
+  width: 100%;
+  top: -30px;
+  background-image: url("../assets/jouet_garcon/border.jpg");
+  background-size: cover;
+  margin: 0 auto;
+}
+/*Div qui contient toutes nos divs images*/
+.top{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 100%;
+  width: 80%;
+  margin: 0 auto 30px;
+}
+/*c'est ici que nous modifions la taille des images*/
+.imgs img{
+  height: 200px;
+  width: 200px;
+  left: 20px;
+}
+/*div qui contient nos images nos titres et nos prix*/
+.imgs{
+  border: 1px solid black;
+  height: 300px;
+  width: 200px;
+  margin: 10px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7), -3px -3px 5px rgba(255, 255, 255, 0.5);
+  background-color: rgb(208, 206, 254);
+
+}
+/*c'est ici que nous modifions les titres qui apparaissent dans le conteneur imgs*/
+h5{
+  color: red;
+  font-family: Arial, sans-serif;
+  font-size: 1em;
+  text-align: center;
+}
+/*ici nous faisons les modifications apporter au bouton*/
+button{
+  position: relative;
+  top: -20px;
+  left: 135px;
+  height: 30px;
+  width: 70px;
+  border: 1px solid rgb(78, 160, 220);
+  border-radius: 10px;
+  background-color: rgb(78, 160, 212);
+  color: rgb(255, 255, 255);
+}
+
+/*Présentation produits*/
+#presentation{
+  width: 80%;
+  height: 80%;
+  /*POSITION*/
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /*APPARENCE*/
+  background-color: white;
+  border: 1px solid black;
+}
+
+
+/*IMAGE DANS LA DIV DE PRESENTATION*/
+#imgPresentation{
+  height: 100%;
+  width: auto;
+  float: left;
+}
+/*TITRE DANS LA DIV DE PRESENTATION*/
+#titlePresentation{
+  color: red;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+/*DESCRIPTIF DANS LA DIV DE PRESENTATION*/
+#textPresentation{
+  padding: 1%;
+}
+/*BOUTON DANS LA DIIV DE PRESENTATION*/
+#buttonPresentation{
+  position: absolute;
+  top: 90%;
+  left: 83%;
+  height: 40px;
+  width: 160px;
+  border: 1px solid rgb(78, 160, 220);
+  border-radius: 10px;
+  background-color: rgb(78, 160, 212);
+  color: rgb(255, 255, 255);
+}
+/*BOUTON QUITTER DE LA DIV DE PRESENTATION*/
+#quitPresentation{
+  background: url("../assets/miscellaneous/close-window.png");
+  background-size: contain;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: -2.5%;
+  left: 98.25%;
+}
+
+/*Bouton go to top*/
+a#cRetour{
+  border-radius:3px;
+  padding:10px;
+  font-size:15px;
+  text-align:center;
+  color:#fff;
+  background:rgba(255, 120, 0, 0.6);
+  position:fixed;
+  right:20px;
+  opacity:1;
+  z-index:99999;
+  transition:all ease-in 0.2s;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  text-decoration: none;
+}
+a#cRetour:before{ content: "\25b2"; }
+a#cRetour:hover{
+  background:rgba(255, 120, 0, 1);
+  transition:all ease-in 0.2s;
+}
+a#cRetour.cInvisible{
+  bottom:-35px;
+  opacity:0;
+  transition:all ease-in 0.5s;
+}
+
+a#cRetour.cVisible{
+  bottom:20px;
+  opacity:1;
+}
