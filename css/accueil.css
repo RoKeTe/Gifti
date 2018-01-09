@@ -193,6 +193,7 @@ button{
   background-size:cover;
   background-repeat: no-repeat;
   border-radius: 0 20px 0 20px;
+  border: 2px solid orange;
   box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.75);
 
   -webkit-filter:brightness(0.6);
