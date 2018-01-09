@@ -184,18 +184,17 @@ button{
   text-decoration: underline;
   text-align: center;
 }
-#reduText{
-  font-family: sans-serif;
-  font-weight: bold;
-  text-align: center;
-}
 
 #réductions{
-  width: 100%;
-  height: 650px;
+  width: 70%;
+  height: 450px;
+  margin: 0 auto;
   background-image: url("../assets/game_imgs/image_jeu_promo.png");
   background-size:cover;
   background-repeat: no-repeat;
+  border-radius: 0 20px 0 20px;
+  border: 2px solid orange;
+  box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.75);
 
   -webkit-filter:brightness(0.6);
   -moz-filter:brightness(0.6);
@@ -215,7 +214,6 @@ button{
 
   filter:brightness(1);
 }
-
 /*Bouton go to top*/
 a#cRetour{
   border-radius:3px;
