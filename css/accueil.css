@@ -125,18 +125,19 @@ footer{
   border: 2px, blue;
 }
 .réductions{
-  width: 80%;
-  background-color: lightgreen;
+  width: 900px;
+  height: 455px;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 #game_img{
-  width:384px;
-  height:300px;
+  width:900px;
+  height:455px;
   background-image: url("../assets/game_imgs/image_jeu_promo.png");
-  background-size: contain;
+  background-size:contain;
+  background-repeat: no-repeat;
 }
 
 /*Bouton go to top*/
