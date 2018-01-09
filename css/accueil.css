@@ -66,11 +66,13 @@ footer{
   list-style-type: none;
   color: white;
 }
+/*texte qui apparaît dans le footer*/
 #copy{
   position: relative;
   font-size: 15px;
   left: 35px;
 }
+/*Icône de fontawsome*/
 #icone{
   position: relative;
   font-size: 30px;
@@ -123,7 +125,7 @@ footer{
   margin: 0 auto;
 }
 
-/*corp page moins de 5 ans*/
+/*corp page d'acceuil*/
 .descriptif{
   text-align: justify;
   font-family: Georgia, Arial, sans-serif;

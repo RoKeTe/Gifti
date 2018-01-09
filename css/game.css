@@ -64,12 +64,17 @@ footer{
   margin: 0;
   background-image: radial-gradient(rgb(255, 180, 0), rgb(255, 120, 0));
   box-shadow: 0px -6px 4px rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+  list-style-type: none;
+  color: white;
 }
+/*texte qui apparaît dans le footer*/
 #copy{
   position: relative;
   font-size: 15px;
   left: 35px;
 }
+/*Icône de fontawsome*/
 #icone{
   position: relative;
   font-size: 30px;
