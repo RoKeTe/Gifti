@@ -84,6 +84,12 @@ footer{
   padding-bottom: 20px;
   text-align: center;
 }
+#actu h1{
+  color: red;
+  font-family: sans-serif;
+  font-weight: bold;
+  text-decoration: underline;
+}
 .actuContainer{
   padding-bottom: 2%;
 }
