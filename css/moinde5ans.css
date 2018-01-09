@@ -1,52 +1,78 @@
-@font-face {
-  font-family: 'ubuntu', sans-serif;
-}
-
-html, body{
+/*BODY*/
+body{
   margin: 0;
   padding: 0;
   width: 100%;
 
 }
+/*HEADER*/
 .logo{
-  width: 30%;
-  display: block;
+  width: 300px;
+  height: 150px;
+  background-size: cover;
+  background-repeat: no-repeat;
   margin: auto;
 }
-
+.logoImg{
+  height: 150px;
+  display: flex;
+  margin: auto;
+}
 header{
-  background-image: radial-gradient(yellow, rgb(218, 161, 13));
+  background-image: radial-gradient(rgb(255, 180, 0), rgb(255, 120, 0));
   background-repeat: no-repeat;
-  box-shadow: 0px 8px 4px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.6);
+  padding-bottom: 0.01%;
 }
 nav ul
 {
     list-style-type: none;
     display: flex;
-
 }
-
 nav li
 {
-    margin: 0.5%;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #fff;
+    margin: 0.55%;
 }
-
 nav a
 {
-    font-size: 1.5em;
-    color: #181818;
-    text-decoration: none;
+  font-family: sans-serif;
+  color: #fff;
+  text-decoration: none;
 }
-
 nav a:hover
 {
     color: #760001;
     border-bottom: 3px solid #760001;
 }
-
 h5{
   font-family: sans-serif;
   color: red;
+}
+
+/*BAS DE PAGE*/
+footer{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  margin: 0;
+  background-image: radial-gradient(rgb(255, 180, 0), rgb(255, 120, 0));
+  box-shadow: 0px -6px 4px rgba(0, 0, 0, 0.5);
+}
+#copy{
+  position: relative;
+  font-size: 15px;
+  left: 35px;
+}
+#icone{
+  position: relative;
+  font-size: 30px;
+  right: 30px;
 }
 
 
@@ -69,7 +95,7 @@ h5{
   margin: 0 auto;
 }
 
-img{
+.imgs img{
   height: 200px;
   width: 200px;
   left: 20px;
@@ -94,8 +120,6 @@ h5{
   text-align: center;
 }
 
-
-
 button{
   position: relative;
   top: -20px;
@@ -106,30 +130,6 @@ button{
   border-radius: 10px;
   background-color: rgb(78, 160, 212);
   color: rgb(255, 255, 255);
-}
-
-
-/*bas de page*/
-footer{
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border: 1px solid Black;
-  height: 50px;
-  width: 100%;
-  margin: auto;
-  background-image: linear-gradient(darkgray, lightgreen);
-}
-#copy{
-  position: relative;
-  font-size: 15px;
-  left: 35px;
-}
-#icone{
-  position: relative;
-  font-size: 30px;
-  right: 30px;
 }
 
 /*Présentation produits*/
@@ -193,7 +193,7 @@ a#cRetour{
   font-size:15px;
   text-align:center;
   color:#fff;
-  background:rgba(218, 161, 13, 0.5);
+  background:rgba(255, 120, 0, 0.6);
   position:fixed;
   right:20px;
   opacity:1;
@@ -205,7 +205,7 @@ a#cRetour{
 }
 a#cRetour:before{ content: "\25b2"; }
 a#cRetour:hover{
-  background:rgba(218, 161, 13, 1);
+  background:rgba(255, 120, 0, 1);
   transition:all ease-in 0.2s;
 }
 a#cRetour.cInvisible{

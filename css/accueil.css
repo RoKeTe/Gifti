@@ -1,13 +1,11 @@
-@font-face {
-  font-family: 'ubuntu', sans-serif;
-}
-
-html, body{
+/*BODY*/
+body{
   margin: 0;
   padding: 0;
   width: 100%;
 
 }
+/*HEADER*/
 .logo{
   width: 300px;
   height: 150px;
@@ -20,53 +18,51 @@ html, body{
   display: flex;
   margin: auto;
 }
-
 header{
-  background-image: radial-gradient(yellow, rgb(218, 161, 13));
+  background-image: radial-gradient(rgb(255, 180, 0), rgb(255, 120, 0));
   background-repeat: no-repeat;
-  box-shadow: 0px 8px 4px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.6);
+  padding-bottom: 0.01%;
 }
 nav ul
 {
     list-style-type: none;
     display: flex;
-
 }
-
 nav li
 {
-    margin: 0.5%;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #fff;
+    margin: 0.55%;
 }
-
 nav a
 {
-    font-size: 1.5em;
-    color: #181818;
-    text-decoration: none;
+  font-family: sans-serif;
+  color: #fff;
+  text-decoration: none;
 }
-
 nav a:hover
 {
     color: #760001;
     border-bottom: 3px solid #760001;
 }
-
 h5{
   font-family: sans-serif;
   color: red;
 }
 
-/*bas de page*/
+/*BAS DE PAGE*/
 footer{
   position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid Black;
   height: 50px;
-  width: 80%;
-  margin: auto;
-  background-image: linear-gradient(darkgray, lightgreen);
+  width: 100%;
+  margin: 0;
+  background-image: radial-gradient(rgb(255, 180, 0), rgb(255, 120, 0));
+  box-shadow: 0px -6px 4px rgba(0, 0, 0, 0.5);
 }
 #copy{
   position: relative;
@@ -80,27 +76,22 @@ footer{
 }
 
 /*barre_déroulante*/
-#barre_déroulante{
+#actu{
   width: 100%;
-  text-align: center;
-}
-.barre_déroulante{
-  width: 90%;
   height: 50%;
-  /*border: 2px blue;*/
-  /*background-color: white;*/
-  margin: 0 auto;
+  margin-top: 20px;
   padding-top: 10px;
   padding-bottom: 20px;
-  margin-top: 20px;
-  background-image: url(../assets/accueil_imgs/tapisjouets.png);
+  text-align: center;
+}
+.actuContainer{
+  padding-bottom: 2%;
 }
 .promo img{
-  /*width: 15%;
-  height: 5%;*/
   width: 22%;
   height: 5%;
   margin-left: 25px;
+  margin-bottom: 1%;
   display: flex;
   float: left;
   border-radius: 0 20px 0 20px;
@@ -122,22 +113,28 @@ footer{
 /*bons de réduction*/
 #réductions{
   width: 100%;
-  border: 2px, blue;
-}
-.réductions{
-  width: 900px;
-  height: 455px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-#game_img{
-  width:900px;
-  height:455px;
+  height: 650px;
   background-image: url("../assets/game_imgs/image_jeu_promo.png");
-  background-size:contain;
+  background-size:cover;
   background-repeat: no-repeat;
+
+  -webkit-filter:brightness(0.6);
+  -moz-filter:brightness(0.6);
+  -o-filter:brightness(0.6);
+  -ms-filter:brightness(0.6);
+
+  filter:brightness(0.6);
+
+  transition-property: filter;
+  transition-duration: 0.75s;
+}
+#réductions:hover{
+  -webkit-filter:brightness(1);
+  -moz-filter:brightness(1);
+  -o-filter:brightness(1);
+  -ms-filter:brightness(1);
+
+  filter:brightness(1);
 }
 
 /*Bouton go to top*/
@@ -147,7 +144,7 @@ a#cRetour{
   font-size:15px;
   text-align:center;
   color:#fff;
-  background:rgba(218, 161, 13, 0.5);
+  background:rgba(255, 120, 0, 0.6);
   position:fixed;
   right:20px;
   opacity:1;
@@ -159,7 +156,7 @@ a#cRetour{
 }
 a#cRetour:before{ content: "\25b2"; }
 a#cRetour:hover{
-  background:rgba(218, 161, 13, 1);
+  background:rgba(255, 120, 0, 1);
   transition:all ease-in 0.2s;
 }
 a#cRetour.cInvisible{
